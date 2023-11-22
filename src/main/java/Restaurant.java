@@ -73,7 +73,18 @@ public class Restaurant {
         return name;
     }
 
-
+    public int selectItem(Item item) {
+        if (!this.cart.contains(item)) {
+            this.cart.add(item);
+        } else {
+            this.cart.remove(item);
+        }
+        int total = 0;
+        for (Item el : this.cart) {
+            total += el.getPrice();
+        }
+        return  total;
+    }
 
 }
 

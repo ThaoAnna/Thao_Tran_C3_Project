@@ -53,7 +53,7 @@ public class Main {
 
 
         tiramisu.displayDetails();
-
+        System.out.println("Your order cost will be "+ omega.selectItem(sunsetCocktail));
 
 
     }
